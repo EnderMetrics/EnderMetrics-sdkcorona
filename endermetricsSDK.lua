@@ -380,7 +380,7 @@ end
 					em.childId=data.child_id;
 					
 					-- I created this object to refresh the table of em.childlist
-					local c = {["app_token"]=em.token, ["account_id"]=em.account_id, ["nick"] = nick, ["birthdate"]= birthdate, ["gender"]= gender}
+					local c = {["app_token"]=em.token, ["account_id"]=em.account_id, ["nick"] = nick, ["birthdate"]= birthdate, ["gender"]= gender, ["id"]=em.childId}
 					table.insert(em.childlist, c)
 					--controlar respuesta data con el childID
 					callback(data.child_id);
